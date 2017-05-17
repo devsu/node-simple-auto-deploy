@@ -1,6 +1,6 @@
 {
   "name": "simple-auto-deploy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility to auto-deploy a node app on another folder",
   "main": "index.js",
   "scripts": {
