@@ -1,0 +1,47 @@
+{
+  "name": "simple-auto-deploy",
+  "version": "0.0.1",
+  "description": "Utility to auto-deploy a node app on another folder",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "test": "istanbul cover jasmine",
+    "posttest": "npm run lint && nsp check && istanbul check-coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devsu/node-simple-auto-deploy.git"
+  },
+  "keywords": [
+    "simple",
+    "auto",
+    "deploy",
+    "node"
+  ],
+  "author": "Cesar Salazar @ Devsu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devsu/node-simple-auto-deploy/issues"
+  },
+  "homepage": "https://github.com/devsu/node-simple-auto-deploy#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-devsu-node": "0.0.3",
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.6.0",
+    "jasmine-spy": "0.0.2",
+    "nsp": "^2.6.3",
+    "proxyquire": "^1.8.0",
+    "rimraf": "^2.6.1",
+    "touch": "^1.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "node-watch": "^0.5.4",
+    "rsync": "^0.6.1"
+  },
+  "bin": {
+    "simple-auto-deploy": "./lib/cli.js"
+  }
+}
