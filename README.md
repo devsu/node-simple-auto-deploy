@@ -4,6 +4,8 @@ A simple utility to deploy a node app on another folder (used for development pu
 ## Installation
 
 ```bash
+# Starting from 0.1.0 yarn is required
+npm i -g yarn
 npm i -g simple-auto-deploy
 ```
 
